@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phone Directory</title>
+	<link rel="stylesheet" type="text/css" href="phonedir.css">
+	<script type="text/javascript" src="phonedir.js"></script>
+</head>
+<body>
+<div id="details_div">
+	
+	<header>
+		<strong>PHONE DIRECTORY</strong>
+	</header>
+<br>
+	<button onclick="form_hide()">ADD</button>
+
+	<table id="Details_table">
+		<tr>
+			<td>NAME</td><td>PHONE</td><td></td>
+		</tr>
+	</table>
+	<div id="info">
+		
+	</div>
+</div>
+	<!-- Adding a subscriber -->
+<div id="form_div" class="form_div">
+	<header>
+		<strong>ADD SUBSCRIBER</strong>
+	</header>
+	<button onclick="form_hide()">BACK</button>
+<div action="#" method="post" name="form_name" >
+	<label>Name:</label><input type="text" name="name"><br>
+	<label> Phone:</label><input type="text" name="phone"><br>
+	<button onclick="add_name()">ADD</button>
+</div>
+</div>
+<div>
+	
+</div>
+</body>
+</html>
