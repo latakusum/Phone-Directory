@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phone Directory</title>
+	<link rel="stylesheet" type="text/css" href="./css/phonedir.css">
+	<script type="text/javascript" src="./js/phonedir.js"></script>
+</head>
+<body>
+
+<div id="details_div">
+
+	<header>
+		<strong>PHONE DIRECTORY</strong>
+	</header>
+<br>
+<button onclick="form_hide()">Add New Subscriber</button>
+<table id="myTable">
+  <tr>
+    <td>Name</td>
+    <td>Phone</td>
+    <td>Action</td>
+  </tr>
+</table>
+
+
+</div>
+<br>
+
+<div id="form_div">
+<header>
+		<strong>ADD SUBSCRIBER</strong>
+	</header>
+	<button onclick="form_hide()">BACK</button>
+    <br>
+<div >
+    <label>Name:</label><input type="text" id="name"><br>
+    <label> Phone:</label><input type="text" id="phone"><br>
+    
+</div>
+<button onclick="newTable()">ADD</button>
+<div >
+<label>Name:</label><span id="line1"></span><br>
+    <label> Phone:</label><span id="line2"></span><br>
+</div>
+</div>
+
+<div id="line">
+</div>
+<script>
+//Show typing Text
+
+var vname = document.getElementById('name');
+var vphone = document.getElementById('phone');
+vname.onkeyup = function(){
+    document.getElementById('line1').innerHTML = vname.value;
+}
+vphone.onkeyup = function(){
+    document.getElementById('line2').innerHTML = vphone.value;
+}
+
+</script>
+
+</body>
+</html>

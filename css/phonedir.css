@@ -1,0 +1,35 @@
+header{
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  text-align: center;
+  background-color: black;
+  color: white;
+
+}
+button,td>button{
+  background-color: #555555;; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+#myTable{width:100%;
+}
+div#form_div{
+  display: none;
+}
+table, td {
+  border: 0px solid black;
+}
+label{
+  font-size: 18px;
+  font-weight: bold;
+}
+.form_div{
+
+}
